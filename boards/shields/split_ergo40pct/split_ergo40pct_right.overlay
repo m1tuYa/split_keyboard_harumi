@@ -46,11 +46,15 @@
             ;
     };
 
-    trackball_listener: trackball_listener {
+	trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&trackball>;
-        input-processors = <&pointer_accel>, <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>;
+
+        // 変更後: トラボ操作のたびに「レイヤー5」を10秒(10000ms)だけ有効化
+        input-processors = <&zip_temp_layer 5 10000>,
+                           <&pointer_accel>,
+                           <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>;
     };
 
 };
