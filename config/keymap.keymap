@@ -43,10 +43,10 @@
 
         layer_1 {
             bindings = <
-&trans  &kp NUMBER_1   &kp NUMBER_2      &kp MINUS         &kp EQUAL          &kp PLUS  &kp MINUS  &mkp MB1  &msc MOVE_X(-20)  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &kp NUMBER_0  &trans
-&trans  &kp SEMICOLON  &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE  &trans     &mkp MB2  &msc MOVE_X(20)   &kp NUMBER_4  &kp N5        &kp NUMBER_6    &none         &none
-&trans  &kp LG(Q)      &kp LG(W)         &none             &none              &none                          &to 0             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp UP_ARROW  &trans
-&trans  &trans         &trans            &trans            &trans             &trans    &trans     &trans    &trans            &trans        &trans        &kp LEFT_ARROW  &kp DOWN      &kp RIGHT
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp MINUS         &kp EQUAL          &kp PLUS       &kp MINUS  &mkp MB1  &msc MOVE_X(-20)  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &kp NUMBER_0  &trans
+&trans  &trans        &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE       &kp SQT    &mkp MB2  &msc MOVE_X(20)   &kp NUMBER_4  &kp N5        &kp NUMBER_6    &none         &none
+&trans  &kp LG(Q)     &kp LG(W)     &none             &none              &kp SEMICOLON                       &to 0             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp UP_ARROW  &trans
+&trans  &trans        &trans        &trans            &trans             &trans         &trans     &trans    &trans            &trans        &trans        &kp LEFT_ARROW  &kp DOWN      &kp RIGHT
             >;
         };
 
