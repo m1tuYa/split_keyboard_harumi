@@ -51,8 +51,8 @@
         status = "okay";
         device = <&trackball>;
 
-        // 変更後: トラボ操作のたびに「レイヤー1」を2秒(2000ms)だけ有効化
-        input-processors = <&zip_temp_layer 1 2000>,
+        // 変更後: トラボ操作のたびに「レイヤー1」を1秒(1000ms)だけ有効化
+        input-processors = <&zip_temp_layer 1 1000>,
                            <&pointer_accel>,
                            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>;
     };
